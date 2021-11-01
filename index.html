@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Protected Images</title>
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <div class="main">
+    <h1>Protected image test</h1>
+    <div class="wrapper">
+      <div>
+        <h1>This image has not been protected</h1>
+        <h3>You can easily steal it.</h3>
+        <img id="cat" width="500px" src="./img/cat.jpeg" />
+      </div>
+      <div>
+        <h1>This image has been protected</h1>
+        <h3>It's harder to steal this one...</h3>
+        <!-- Good luck trying to download the image source :P -->
+        <div class="protectedimage"></div>
+        <!-- <canvas height="400px" width="500px" ></canvas> -->
+        <p>The API that provides the image is protected also. Try it <span></span>.</p>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
